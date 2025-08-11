@@ -91,7 +91,7 @@ export default function RegistrationInstructions({ className = '' }: Registratio
         {/* Background grid effect */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/10 to-blue-900/10 rounded-2xl"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] 
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]
                         from-cyan-900/20 via-transparent to-transparent rounded-2xl"></div>
         </div>
       </div>
