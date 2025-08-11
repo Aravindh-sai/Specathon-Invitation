@@ -36,7 +36,6 @@ export default function WelcomeScreen({ onComplete }: { onComplete: () => void }
     <AnimatePresence>
       {showWelcome && (
         <>
-          {/* <audio src="/audio/bgm.mp3" autoPlay loop style={{ display: 'none' }} /> */}
           <motion.div
             key="welcome"
             initial={{ opacity: 0 }}
