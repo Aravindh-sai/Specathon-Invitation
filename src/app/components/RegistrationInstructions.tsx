@@ -15,11 +15,11 @@ export default function RegistrationInstructions({ className = '' }: Registratio
     <section className={`w-full max-w-4xl mx-auto ${className}`}>
       <div className="relative">
         {/* Holographic Board Container */}
-      <div className="relative bg-black/60 backdrop-blur-md border border-cyan-400/50 rounded-2xl p-6 md:p-8 lg:p-12 shadow-[0_0_30px_rgba(0,255,255,0.3),0_0_60px_rgba(0,255,255,0.1)]">
+        <div className="relative bg-black/60 backdrop-blur-md border border-cyan-400/50 rounded-2xl p-6 md:p-8 lg:p-12 shadow-[0_0_30px_rgba(0,255,255,0.3),0_0_60px_rgba(0,255,255,0.1)]">
 
-        {/* Glowing Border Effect */}
-        <div className="absolute inset-0 rounded-2xl border border-cyan-400/20"></div>
-        <div className="absolute inset-0 rounded-2xl shadow-[inset_0_0_20px_rgba(0,255,255,0.1)]"></div>
+          {/* Glowing Border Effect */}
+          <div className="absolute inset-0 rounded-2xl border border-cyan-400/20"></div>
+          <div className="absolute inset-0 rounded-2xl shadow-[inset_0_0_20px_rgba(0,255,255,0.1)]"></div>
 
           {/* Title */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-mono text-center mb-6 md:mb-8 text-cyan-300 
@@ -33,7 +33,7 @@ export default function RegistrationInstructions({ className = '' }: Registratio
               <span className="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 bg-cyan-500/20 border border-cyan-400 rounded-full 
                                flex items-center justify-center text-cyan-300 font-bold text-xs md:text-sm">1</span>
               <div className="flex-1">
-                <span className="text-cyan-300 font-semibold">Click the "Register Now" button</span> below and complete the Google Form.
+                <span className="text-cyan-300 font-semibold">Click the &quot;Register Now&quot; button</span> below and complete the Google Form.
               </div>
             </li>
 
@@ -80,7 +80,7 @@ export default function RegistrationInstructions({ className = '' }: Registratio
                        transform transition-all duration-300 ease-out"
             >
               <span className="relative z-10">🚀 Register Now</span>
-              
+
               {/* Hover glow effect */}
               <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 
                             opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
