@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #000000;
+  color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.domain-instruction {
+  font-family: 'Orbitron', sans-serif;
+  color: cyan;
+  background: rgba(0, 0, 50, 0.2);
+  border-left: 4px solid #00ffff;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  text-shadow: 0 0 6px #00ffff;
+  animation: glowText 1.5s ease-in-out infinite alternate;
+  max-width: 500px;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 6px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 12px #00ccff, 0 0 18px #00ffff;
+  }
+}
+
+@keyframes glow {
+  0% {
+    text-shadow:
+      0 0 5px #42a7c2,
+      0 0 10px #42a7c2,
+      0 0 15px #42a7c2,
+      0 0 20px #42a7c2,
+      0 0 25px #42a7c2,
+      0 0 30px #42a7c2,
+      0 0 35px #42a7c2;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #6bd0ff,
+      0 0 20px #6bd0ff,
+      0 0 30px #6bd0ff,
+      0 0 40px #6bd0ff,
+      0 0 50px #6bd0ff,
+      0 0 60px #6bd0ff,
+      0 0 70px #6bd0ff;
+  }
 }
